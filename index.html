@@ -178,7 +178,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Alt+F4:关闭当前项目或退出程序<br>Alt+Tab:在打开的项目之间切换<br>Ctrl+W:关闭程序<br>Ctrl+shift+Esc:打开任务管理器，常用于关闭一些任务。<br>shift+delete:永久性的删除文件，删除后回收站也没有<br>Windows+E:开启此电脑文件/盘符主页<br>windows+R:打开运行窗口，(作用我们可以从运行窗口打开cmd等窗口）<br>windows+Tab：切换程序</p>
+        <p>Alt+F4:关闭当前项目或退出程序<br>Alt+Tab:在打开的项目之间切换<br>Ctrl+W:关闭程序<br>Ctrl+shift+Esc:打开任务管理器，常用于关闭一些任务。<br>shift+delete:永久性的删除文件，删除后回收站也没有<br>Windows+E:开启此电脑文件/盘符主页<br>windows+R:打开运行窗口，(作用我们可以从运行窗口打开cmd等窗口）<br>windows+Tab：切换程序<br>windows+加号键：放大镜</p>
 
       
 
@@ -401,6 +401,20 @@
 <li>健壮性：ava的强类型机制、异常处理、废料的自动收集等是Java程序健壮性的重要保证。对指针的丢弃是Java的明智选择。Java的安全检查机制使得Java更具健壮性。</li>
 <li>参考：<a href="https://mp.weixin.qq.com/s?src=3&timestamp=1595663783&ver=1&signature=W*2Kao66W**SpmrlfAbuxpQtXbwPboLf3zZ3Huxoc4a9dR0dWy1R6CukPfqLN0NmcA9n0-uABPO5CpUF0HcZw31QVguJnn-3854yVEtPSxeqJAKvgr3sNk*4AFDtEQSbglR38mSlJyW4yI5hHUFHsGK-VK2KRKwHPnhrvZM5uas=" target="_blank" rel="noopener">java语言的特性</a></li>
 </ul>
+<h2 id="JDK-JRE-JVM之间的关系"><a href="#JDK-JRE-JVM之间的关系" class="headerlink" title="JDK ,JRE ,JVM之间的关系"></a>JDK ,JRE ,JVM之间的关系</h2><ul>
+<li>JDK（Java Development Kit）java开发者工具，包含JRE和JVM</li>
+<li>JRE（Java Runtime Environment）java运行时环境，包含JVM</li>
+<li>JVM（Java Virtual Machine)java虚拟机</li>
+</ul>
+<h2 id="java开发环境的搭建"><a href="#java开发环境的搭建" class="headerlink" title="java开发环境的搭建"></a>java开发环境的搭建</h2><h4 id="JDK的下载与安装"><a href="#JDK的下载与安装" class="headerlink" title="JDK的下载与安装"></a>JDK的下载与安装</h4><ol>
+<li>浏览器中搜索下载需要版本的JDK（推荐JDK8）</li>
+<li>下载完成后双击就可以进行安装<h4 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h4></li>
+<li>我的电脑-&gt;右键-&gt;属性-&gt;高级系统设置-&gt;环境变量</li>
+<li>在系统变量下新建JAVA_HOME</li>
+<li>变量名：JAVA_HOME<br>变量值：JDK的安装路径（D:\Program Files\Java\jdk1.8.0_131）</li>
+<li>找到变量名：PATH<br>新增变量值jdk/bin的地址：%JAVA_HOME%\bin(也可以直接写jdk的bin目录路径：D:\Program Files\Java\jdk1.8.0_131 %%表示引用)<br>新增变量值jdk/jre/bin值：%JAVA_HOME%\jre\bin(或D:\Program Files\Java\jdk1.8.0_131\jre\bin)<br><font color=blue><em>bin目录中有一些执行Java需要的小程序（如javac和java）jre是运行时环境</em></font></li>
+<li>测试是否成功：cmd中输入java -version</li>
+</ol>
 
       
 
